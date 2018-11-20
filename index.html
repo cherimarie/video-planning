@@ -15,16 +15,56 @@
     </label>
 
     <label>Your email:
-      <input type="email" name="applicantEmail">
+      <input type="email" name="applicantEmail" required>
     </label>
 
     <label>City you live in:
-      <input type="text" name="applicantCity">
+      <input type="text" name="applicantCity" placeholder="Seattle">
     </label>
 
+    <!-- alternate label syntax. "for" of label matches "id" of input. -->
     <label for="current">How many pets do you have in your home now?</label>
     <input type="text" name="currentPets" id="current">
 
+    <label>Why do you want to adopt a new pet?
+      <textarea rows="4" cols="50" name="applicantReason"></textarea>
+    </label>
+
+    <fieldset>What type of animal(s) are you interested in adopting?
+      <label>
+        <input type="checkbox" name="species" value="dog">Dog
+      </label>
+      <label>
+        <input type="checkbox" name="species" value="cat">Cat
+      </label>
+      <label>
+        <input type="checkbox" name="species" value="rabbit">Rabbit
+      </label>
+      <label>
+        <input type="checkbox" name="species" value="snake">Snake
+      </label>
+      <label>
+        <input type="checkbox" name="species" value="other">Other
+      </label>
+    </fieldset>
+
+    <fieldset>Are you interested in special needs or elderly animals?
+      <label>
+        <input type="radio" name="specialNeeds" value="yes">Yes
+      </label>
+      <label>
+        <input type="radio" name="specialNeeds" value="no">No
+      </label>
+    </fieldset>
+
+    <label>
+      How many hours a day is someone usually home to keep a pet company?
+      <select name="hours">
+        <option value="few">less than 10</option>
+        <option value="medium">10-16</option>
+        <option value="many">more than 16</option>
+      </select>
+    </label>
 
     <label>If you'd like to create an account, enter a password:
       <input type="password" name="applicantPassword">
